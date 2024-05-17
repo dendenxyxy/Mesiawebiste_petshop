@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Trebuchet MS, sans-serif;
+            color: #ffffff;
+            color: #000000;
+           background-color: #87CEEB;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            color: #000000;
+        }
+
+        
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: #000000;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+       
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+       
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 40px;
+            max-width: 400px;
+            margin: 0 auto; 
+        }
+
+        
+        .header {
+            overflow: hidden;
+            background-color: #36454F;
+        }
+
+        .header a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 30px 40px;
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+	
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="Petshop.html">Home</a>
+    <a href="Dog&Cat.html">Products</a>
+    <a href="aboutus.html">About Us</a>
+</div>
+
+<h1>Contact Us</h1>
+
+<div class="container">
+    <form action="Servicescontact.html">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="City">City/Municipality</label>
+        <select id="country" name="country">
+            <option value="Pasay">City/Municipality</option>
+            <option value="Manila">Manila City</option>
+            <option value="Makati">Makati City</option>
+            <option value="Cavite">Pasay City</option>
+            <option value="Batangas">Cavite</option>
+        </select>
+		
+		<label for="Motor">Pet Inquiry</label>
+        <select id="city" name="city" required>
+		    <option value="Select">Choose Your Furry Friend</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+        </select>
+		
+
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Your Message" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+</body>
+</html>

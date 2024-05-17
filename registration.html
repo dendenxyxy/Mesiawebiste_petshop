@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+           background-color: #87CEEB;
+            color: #000000;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        input[type=text], input[type=email], input[type=tel], select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        input[type=submit] {
+            background-color: #191970;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #FFFFF0;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: #36454F;
+        }
+
+        .header a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 30px 40px;
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            background-color:#36454F;
+            color: black;
+        }
+
+        .remember-me {
+            margin-top: 5px;
+            margin-bottom: 13px;
+        }
+
+        .remember-me label {
+            color: #ffffff;
+            margin-left: 5px;
+        }
+		
+    </style>
+</head>
+<body>
+<div class="header">
+   
+    <a href="contactus.html">Contact</a>
+   <li><a href="aboutus.html">About Us</a></li>
+</div>
+
+<h1>Sign Up</h1>
+
+<div class="container">
+    <form action="Dog&Cat.html" method="post">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter Your Name" required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Your Number" required>
+
+        <label for="city">City/Municipality</label>
+        <select id="city" name="city" required>
+			<option value="Select">Select the Location</option>
+            <option value="Pasay">Pasay City</option>
+            <option value="Manila">Manila City</option>
+            <option value="Makati">Makati City</option>
+            <option value="Cavite">Cavite</option>
+            <option value="Batangas">Batangas</option>
+        </select>
+
+    
+        <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember Me</label>
+			<p>Remember Me</p>
+        </div>
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+</body>
+</html>
+
